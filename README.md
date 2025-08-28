@@ -27,7 +27,7 @@ Hệ thống giúp tiết kiệm thời gian, giảm sai sót và dễ dàng the
 
 ## 👨‍💻 Thành viên nhóm
 - Đào Bá Phương Ninh
-- Nguyễn Chí chung
+- Nguyễn Trí chung
 - Phạm Văn Hoàn
 - Nguyễn Văn Hiếu
 - Nguyễn Ngọc An
