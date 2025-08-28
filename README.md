@@ -25,14 +25,8 @@ Hệ thống giúp tiết kiệm thời gian, giảm sai sót và dễ dàng the
 ---
 
 ## 👨‍💻 Thành viên nhóm
-- Nguyễn Văn A  
-- Trần Thị B  
-- Lê Văn C  
-- ... (cập nhật thêm)
-
----
-
-## 🚀 Cách chạy dự án
-1. Clone dự án về máy:
-   ```bash
-   git clone https://github.com/<username>/<repo-name>.git
+- Đào Bá Phương Ninh
+- Nguyễn Chí chung
+- Phạm Văn Hoàn
+- Nguyễn Văn Hiếu
+- Nguyễn Ngọc An
