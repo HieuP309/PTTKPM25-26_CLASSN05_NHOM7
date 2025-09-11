@@ -14,6 +14,7 @@ Hệ thống giúp tiết kiệm thời gian, giảm sai sót và dễ dàng the
 - Đăng nhập/đăng xuất
 - Quản lý tài khoản, danh mục, sản phẩm, phiếu nhập/xuất
 - Thống kê doanh thu
+
 *Nhân viên có thể:
 - Đăng nhập/đăng xuất
 - Quản lý danh mục, sản phẩm
