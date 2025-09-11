@@ -1,20 +1,24 @@
-# Nhom7_QuanLyThuVien
+# Nhom7_quanlykhohang
 
-Quan ly thu vien
-# 📚 Dự án Quản Lý Thư Viện
+Quan ly kho hang
+# Xây dựng phần mềm quản lý kho hàng
 
 ## 📖 Giới thiệu
-Dự án **Quản lý Thư viện** được xây dựng nhằm hỗ trợ việc quản lý sách, độc giả và hoạt động mượn - trả sách trong thư viện.  
-Hệ thống giúp tiết kiệm thời gian, giảm sai sót và dễ dàng theo dõi tình trạng sách.
+Dự án **Quản lý Kho hàng** được xây dựng nhằm hỗ trợ việc quản lý sản phẩm, khách hàng và hoạt động nhập - xuất hàng trong kho.
+Hệ thống giúp tiết kiệm thời gian, giảm sai sót và dễ dàng theo dõi tình trạng hàng hóa.
 
 ---
 
 ## 🎯 Chức năng chính
-- Quản lý sách (thêm, sửa, xóa, tìm kiếm).
-- Quản lý độc giả (thông tin, liên hệ).
-- Quản lý mượn/trả sách.
-- Thống kê số lượng sách, số lượt mượn.
-- Giao diện dòng lệnh/đơn giản dễ sử dụng.
+Admin có thể:
+Đăng nhập/đăng xuất
+Quản lý tài khoản, danh mục, sản phẩm, phiếu nhập/xuất
+Thống kê doanh thu
+Nhân viên có thể:
+Đăng nhập/đăng xuất
+Quản lý danh mục, sản phẩm
+Tạo phiếu nhập, xuất
+Xem thống kê doanh thu
 
 ---
 
