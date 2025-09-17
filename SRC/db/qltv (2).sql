@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 15, 2021 at 09:11 PM
+-- Generation Time: Sep 16, 2021 at 01:40 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -41,13 +41,13 @@ CREATE TABLE `chitietphieumuon` (
 --
 
 INSERT INTO `chitietphieumuon` (`MaCTPM`, `MaPM`, `MaSach`, `NgayTra`, `GhiChu`, `TrangThai`) VALUES
-(19, 12, 22, '2021-04-28', 'Đã Hết Hạn', 0),
-(21, 13, 19, '2021-04-29', 'Hôm nay là hạn cuối', 0),
-(22, 16, 26, '2021-09-15', '', 0),
-(23, 16, 26, '2021-09-15', '', 1),
-(24, 16, 26, '2021-09-15', 'Hôm nay là hạn cuối', 1),
-(25, 16, 26, '2021-09-23', 'Chưa hết hạn', 1),
-(26, 16, 26, '2021-09-23', 'Chưa hết hạn', 0);
+(29, 19, 32, '2021-09-22', '', 1),
+(30, 19, 32, '2021-09-22', 'Chưa hết hạn', 1),
+(31, 19, 29, '2021-09-22', 'Chưa hết hạn', 1),
+(32, 19, 27, '2021-09-22', 'Chưa hết hạn', 1),
+(33, 20, 32, '2021-09-22', 'Chưa hết hạn', 1),
+(34, 20, 27, '2021-09-22', 'Chưa hết hạn', 1),
+(35, 20, 31, '2021-09-22', 'Chưa hết hạn', 1);
 
 -- --------------------------------------------------------
 
@@ -69,21 +69,8 @@ CREATE TABLE `chitietphieunhap` (
 --
 
 INSERT INTO `chitietphieunhap` (`MaCTPN`, `MaPN`, `MaSach`, `Gia`, `SoLuong`, `ThanhTien`) VALUES
-(1, 1, 2, 10000, 10, 100000),
-(3, 4, 3, 10000, 10, 100000),
-(4, 4, 5, 10000, 20, 200000),
-(5, 5, 4, 1111, 2, 2222),
-(6, 6, 4, 15000, 10, 150000),
-(7, 6, 5, 15000, 9, 135000),
-(8, 7, 13, 10000, 10, 100000),
-(10, 7, 13, 100000, 20, 2000000),
-(11, 9, 13, 15000, 10, 150000),
-(12, 9, 15, 30000, 15, 450000),
-(13, 9, 15, 15, 4000, 60000),
-(14, 9, 15, 11111, 500, 5555500),
-(15, 10, 17, 15000, 3, 45000),
-(16, 11, 19, 15000, 10, 150000),
-(17, 13, 26, 25000, 10, 250000);
+(18, 16, 27, 10000, 10, 100000),
+(19, 16, 28, 15000, 20, 300000);
 
 -- --------------------------------------------------------
 
@@ -105,12 +92,8 @@ CREATE TABLE `docgia` (
 --
 
 INSERT INTO `docgia` (`madocgia`, `tendocgia`, `gioitinh`, `diachi`, `sdt`, `TrangThai`) VALUES
-(4, 'Trần Hữu Khương', 'Nam', 'Đồng Nai', '0391266216', 0),
-(6, 'Trần Văn Khang', 'Nam', 'Long Xuyên', '038126612', 0),
-(7, 'Nguyễn Đình Trí', 'Nam', 'Đồng Nai', '21737128', 0),
-(8, 'Nguyễn Trần Huỳnh Long', 'Nam', 'HCM', '1286172673', 0),
-(9, 'Võ Hoàng Kiệt', 'Nam2', 'Long An', '0396527908', 0),
-(10, 'Vo Hoang Keit', 'Nam', 'Long AN', '03917271', 1);
+(14, 'Võ Hoàng Kiệt', 'Nam', 'Long An', '0396527908', 1),
+(15, 'Ngô Phú Khang', 'Nam', 'Cà Mau', '0396527909', 1);
 
 -- --------------------------------------------------------
 
@@ -129,13 +112,11 @@ CREATE TABLE `kesach` (
 --
 
 INSERT INTO `kesach` (`MaKe`, `ViTri`, `TrangThai`) VALUES
-(2, 'Kệ 1', 1),
-(5, 'Kệ 2', 0),
-(6, 'Kệ 3', 1),
-(8, 'Kệ 4', 1),
-(9, 'jhu C', 0),
-(11, '', 0),
-(12, 'kệ 6', 0);
+(13, 'Kệ 1', 1),
+(14, 'Kệ 2', 1),
+(15, 'Kệ 3', 1),
+(16, 'Kệ 4', 1),
+(17, 'Kệ 5', 1);
 
 -- --------------------------------------------------------
 
@@ -154,15 +135,10 @@ CREATE TABLE `loai` (
 --
 
 INSERT INTO `loai` (`MaLoai`, `TenLoai`, `TrangThai`) VALUES
-(3, 'Trinh Thám', 1),
-(4, 'Văn học', 1),
-(5, 'Kinh Tế', 1),
-(6, 'Khoa học tự nhiên', 1),
-(7, 'Lập trình cntt', 1),
-(8, 'Manga', 1),
-(9, 'Kinh Tế 2', 0),
-(10, '', 0),
-(11, 'Manga2', 0);
+(12, 'CNTT', 1),
+(13, 'Khoa Học', 1),
+(14, 'Truyện Tranh', 1),
+(15, 'Truyện cổ tích', 1);
 
 -- --------------------------------------------------------
 
@@ -209,12 +185,9 @@ CREATE TABLE `nhanvien` (
 --
 
 INSERT INTO `nhanvien` (`MaNV`, `TenNV`, `NamSinh`, `GioiTinh`, `DiaChi`, `Sdt`, `TrangThai`) VALUES
-(29, 'Võ Hoàng Kiệt', '2001', 'Nam', 'HCM', '823648328', 0),
-(30, 'Ngô Phú Khang', '2001', 'Nam', 'HCM', '2137213821', 0),
-(31, 'Huỳnh Hoàng Phúc', '2001', 'Nam', 'HCM', '273771', 0),
-(32, 'Nguyễn Trần Huỳnh Long', '2001', 'Nam', 'HCM', '273771212', 0),
-(33, 'Võ Hoàng Kiệt', '2001', 'Nam', 'Long An 2', '0396527908', 0),
-(34, 'Vox Hoang Kietj', '2001', 'Nam', 'Long An', '039652890', 1);
+(35, 'Nhân Viên 1', '2001', 'Nam', 'Long An', '0396527908', 1),
+(36, 'Nhân Viên 2', '2002', 'Nam', 'Cà Mau', '0396527908', 1),
+(37, 'Nhân Viên 3', '2000', 'Nữ', 'Bến Tre', '0396527908', 1);
 
 -- --------------------------------------------------------
 
@@ -235,14 +208,12 @@ CREATE TABLE `nhaxuatban` (
 --
 
 INSERT INTO `nhaxuatban` (`MaNXB`, `TenNXB`, `DiaChi`, `Sdt`, `TrangThai`) VALUES
-(1, 'Tuổi Trẻ', 'Long AN', '03927626631', 0),
-(2, 'Đại Học Sài Gòn Cơ Sở 2', 'An Dương Vương quận 5', '039266163', 0),
-(7, 'Nhà Xuất Bản Trẻ', 'TP HCM', '12712812312', 0),
-(8, 'NXB Hồng Đức', 'TP HCM', '073589663', 0),
-(9, 'Tuổi Hồng 1', 'HCM', '1273721', 0),
-(10, 'Tuổi Hồng', 'TP HCM', '1273721', 0),
-(11, 'Võ Hoàng Kiệt', 'Long An', '0396527890', 1),
-(12, 'Võ Hoàng Kiệt2', 'Long An', '0396527890', 0);
+(13, 'Nhà Xuất Bản Số1 ', 'Hồ Chí Minh', '0396527908', 1),
+(14, 'Nhà Xuất Bản Số 2', 'Hồ Chí Minh', '0396527909', 1),
+(15, 'Nhà Xuất Bản Số 3', 'Hồ Chí Minh', '0396527910', 1),
+(16, 'Nhà Xuất Bản Số 4', 'Hồ Chí Minh', '0396527911', 1),
+(17, 'Nhà Xuất Bản Số 5', 'Hồ Chí Minh', '0396527912', 0),
+(18, 'Nhà Xuất Bản Số 6', 'Hồ Chí Minh', '0396527913', 1);
 
 -- --------------------------------------------------------
 
@@ -256,19 +227,6 @@ CREATE TABLE `phat` (
   `lydo` varchar(255) NOT NULL,
   `tien` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `phat`
---
-
-INSERT INTO `phat` (`mapp`, `mapm`, `lydo`, `tien`) VALUES
-(1, 1, 'Hỏng Sách', '10000'),
-(2, 10, 'Hỏng Sách', '111111'),
-(3, 10, 'Không Đúng Sách Đã Mượn', '111100'),
-(4, 11, 'Hỏng Sách', '10000'),
-(5, 11, 'Mất Sách', '1111111'),
-(6, 13, 'Hỏng Sách', '10000'),
-(7, 12, 'Hỏng Sách', '1000000');
 
 -- --------------------------------------------------------
 
@@ -290,11 +248,8 @@ CREATE TABLE `phieumuon` (
 --
 
 INSERT INTO `phieumuon` (`MaPM`, `MaNV`, `MaDocGia`, `NgayMuon`, `TinhTrang`, `TrangThai`) VALUES
-(12, 32, 7, '2021-04-28', 'Đã Trả', 0),
-(13, 30, 4, '2021-04-28', 'Đang Mượn', 0),
-(14, 29, 3, '2021-04-29', 'Đang Mượn', 0),
-(15, 34, 10, '2021-09-15', 'Đã Trả', 0),
-(16, 34, 10, '2021-09-15', 'Đang Mượn', 1);
+(19, 35, 14, '2021-09-15', 'Đã Trả', 1),
+(20, 35, 14, '2021-09-15', 'Đang Mượn', 1);
 
 -- --------------------------------------------------------
 
@@ -315,14 +270,7 @@ CREATE TABLE `phieunhap` (
 --
 
 INSERT INTO `phieunhap` (`MaPhieuNhap`, `MaNCC`, `MaNV`, `NgayNhap`, `TrangThai`) VALUES
-(3, 1, 3, '2021-03-05', 0),
-(4, 2, 7, '2021-04-07', 0),
-(5, 1, 25, '2021-04-07', 0),
-(6, 2, 17, '2021-04-14', 0),
-(7, 2, 28, '2021-04-25', 0),
-(8, 2, 22, '2021-04-26', 0),
-(9, 1, 28, '2021-04-27', 0),
-(13, 2, 34, '2021-09-15', 0);
+(16, 2, 36, '2021-09-15', 1);
 
 -- --------------------------------------------------------
 
@@ -348,17 +296,12 @@ CREATE TABLE `sach` (
 --
 
 INSERT INTO `sach` (`MaSach`, `TenSach`, `MaLoai`, `MaNXB`, `MaTacGia`, `NamXB`, `SoLuong`, `Make`, `HinhAnh`, `TrangThai`) VALUES
-(13, 'Lập Trình C', 3, 1, 3, 2021, 14, 2, '61456.png', NULL),
-(15, 'Lập Trình C#', 3, 1, 3, 2021, 10, 2, '61456.png', NULL),
-(16, 'Lập Trình Java', 3, 1, 3, 2025, 1, 2, 'bookicon.png', NULL),
-(18, 'Những Mẫu Chuyện Hài Hước', 3, 1, 3, 2002, 10, 2, 'haihuoc.jpg', NULL),
-(19, 'Ba Ngày Hạnh Phúc', 3, 1, 3, 2019, 10, 2, 'bia-1-3-ngay-hp.jpg', NULL),
-(20, 'Bi Thương Ngược Dòng Thành Sông', 4, 8, 11, 2019, 10, 2, 'biaao_bithuongnguocdongthanhsong_3.jpg', NULL),
-(21, 'Ông Già Và Biển Cả', 4, 7, 7, 2019, 15, 2, '8936067597936.jpg', NULL),
-(22, 'Hai Số Phận - Bìa Cứng', 4, 7, 11, 2019, 14, 2, 'haisophan.jpg', NULL),
-(23, 'Mùa Hè Của Quỷ Thai', 3, 8, 11, 2012, 15, 6, 'mua-he-cua-quy-thai_bia1.jpg', NULL),
-(24, 'Con Chim Xanh Biếc Bay Về', 4, 7, 7, 2020, 20, 5, 'biamem.jpg', NULL),
-(26, 'Võ Hoàng Kiệt2', 3, 11, 13, 2001, 18, 2, 'haihuoc.jpg', '1');
+(27, 'Quyển Sách 1', 13, 14, 15, 2021, 19, 13, 'haihuoc.jpg', '1'),
+(28, 'Quyển Sách 2', 12, 15, 16, 2020, 30, 14, '8936067597936.jpg', '1'),
+(29, 'Quyển Sách 3', 14, 16, 17, 2019, 20, 13, '8936067597936.jpg', '1'),
+(30, 'Quyển Sách 4', 15, 18, 16, 2019, 10, 13, 'macbiet.jpg', '1'),
+(31, 'Quyển Sách 5', 14, 16, 16, 2019, 9, 13, 'biamem.jpg', '1'),
+(32, 'Quyển Sách 6', 14, 16, 16, 2019, 9, 13, 'biaao_bithuongnguocdongthanhsong_3.jpg', '1');
 
 -- --------------------------------------------------------
 
@@ -379,13 +322,10 @@ CREATE TABLE `tacgia` (
 --
 
 INSERT INTO `tacgia` (`MaTacGia`, `TenTacGia`, `NamSinh`, `QueQuan`, `TrangThai`) VALUES
-(3, 'Nguyễn Ngọc Ánh', '1994', 'Nghệ An', 0),
-(4, 'Nguyễn Ngọc Ánh', '1994', 'Nghệ An', 0),
-(7, 'Nguyễn Văn Cừ', '1989', 'Sài Gòn', 0),
-(10, 'Võ Hoàng Kiey', '1995', 'Nghệ An', 0),
-(11, 'Quách Kim Minh', '1985', 'Bến Tre', 0),
-(12, 'Võ Hoàng Kiệt2', '2001', 'Long An', 0),
-(13, 'Võ Hoàng Kiệt', '2001', 'Long An', 1);
+(14, 'Tác Giả 1', '2001', 'Long An', 1),
+(15, 'Tác Giả 2', '2002', 'Long An', 1),
+(16, 'Tác Giả 3', '2000', 'Long An', 1),
+(17, 'Tác Giả 4', '1999', 'Long An', 1);
 
 -- --------------------------------------------------------
 
@@ -406,13 +346,7 @@ CREATE TABLE `taikhoan` (
 
 INSERT INTO `taikhoan` (`matk`, `username`, `password`, `quyen`) VALUES
 (1, 'admin', 'admin ', 0),
-(6, 'testthemtaikhoan', '111111 ', 1),
-(24, 'khang123', '123456 ', 1),
-(25, 'sang', '1234 ', 1),
-(26, 'gameooff11111', 'kietlun147 ', 1),
-(27, 'phukim', '12345 ', 0),
-(28, 'khuongsake', '123456 ', 1),
-(30, 'ngokhang', 'khang123', 1);
+(35, 'nv1', 'npnn2001 ', 1);
 
 -- --------------------------------------------------------
 
@@ -432,9 +366,8 @@ CREATE TABLE `thethuvien` (
 --
 
 INSERT INTO `thethuvien` (`MaTheThuVien`, `NgayBatDau`, `NgayKetThuc`, `GhiChu`) VALUES
-(4, '2021-04-29', '2021-04-30', NULL),
-(6, '2021-04-29', '2021-04-30', NULL),
-(10, '2021-09-15', '2021-09-30', NULL);
+(14, '2021-09-15', '2021-09-15', NULL),
+(15, '2021-09-15', '2021-09-30', NULL);
 
 --
 -- Indexes for dumped tables
@@ -452,7 +385,9 @@ ALTER TABLE `chitietphieumuon`
 -- Indexes for table `chitietphieunhap`
 --
 ALTER TABLE `chitietphieunhap`
-  ADD PRIMARY KEY (`MaCTPN`);
+  ADD PRIMARY KEY (`MaCTPN`),
+  ADD KEY `MaSach` (`MaSach`),
+  ADD KEY `MaPN` (`MaPN`);
 
 --
 -- Indexes for table `docgia`
@@ -494,25 +429,34 @@ ALTER TABLE `nhaxuatban`
 -- Indexes for table `phat`
 --
 ALTER TABLE `phat`
-  ADD PRIMARY KEY (`mapp`);
+  ADD PRIMARY KEY (`mapp`),
+  ADD KEY `mapm` (`mapm`);
 
 --
 -- Indexes for table `phieumuon`
 --
 ALTER TABLE `phieumuon`
-  ADD PRIMARY KEY (`MaPM`);
+  ADD PRIMARY KEY (`MaPM`),
+  ADD KEY `MaNV` (`MaNV`),
+  ADD KEY `MaDocGia` (`MaDocGia`);
 
 --
 -- Indexes for table `phieunhap`
 --
 ALTER TABLE `phieunhap`
-  ADD PRIMARY KEY (`MaPhieuNhap`);
+  ADD PRIMARY KEY (`MaPhieuNhap`),
+  ADD KEY `MaNCC` (`MaNCC`),
+  ADD KEY `MaNV` (`MaNV`);
 
 --
 -- Indexes for table `sach`
 --
 ALTER TABLE `sach`
-  ADD PRIMARY KEY (`MaSach`);
+  ADD PRIMARY KEY (`MaSach`),
+  ADD KEY `MaLoai` (`MaLoai`),
+  ADD KEY `MaNXB` (`MaNXB`),
+  ADD KEY `MaTacGia` (`MaTacGia`),
+  ADD KEY `Make` (`Make`);
 
 --
 -- Indexes for table `tacgia`
@@ -540,31 +484,31 @@ ALTER TABLE `thethuvien`
 -- AUTO_INCREMENT for table `chitietphieumuon`
 --
 ALTER TABLE `chitietphieumuon`
-  MODIFY `MaCTPM` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `MaCTPM` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `chitietphieunhap`
 --
 ALTER TABLE `chitietphieunhap`
-  MODIFY `MaCTPN` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `MaCTPN` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `docgia`
 --
 ALTER TABLE `docgia`
-  MODIFY `madocgia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `madocgia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `kesach`
 --
 ALTER TABLE `kesach`
-  MODIFY `MaKe` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `MaKe` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `loai`
 --
 ALTER TABLE `loai`
-  MODIFY `MaLoai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `MaLoai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `nhacungcap`
@@ -576,43 +520,43 @@ ALTER TABLE `nhacungcap`
 -- AUTO_INCREMENT for table `nhanvien`
 --
 ALTER TABLE `nhanvien`
-  MODIFY `MaNV` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `MaNV` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `nhaxuatban`
 --
 ALTER TABLE `nhaxuatban`
-  MODIFY `MaNXB` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `MaNXB` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `phat`
 --
 ALTER TABLE `phat`
-  MODIFY `mapp` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `mapp` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `phieumuon`
 --
 ALTER TABLE `phieumuon`
-  MODIFY `MaPM` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `MaPM` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `phieunhap`
 --
 ALTER TABLE `phieunhap`
-  MODIFY `MaPhieuNhap` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `MaPhieuNhap` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `sach`
 --
 ALTER TABLE `sach`
-  MODIFY `MaSach` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `MaSach` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `tacgia`
 --
 ALTER TABLE `tacgia`
-  MODIFY `MaTacGia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `MaTacGia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Constraints for dumped tables
@@ -624,6 +568,42 @@ ALTER TABLE `tacgia`
 ALTER TABLE `chitietphieumuon`
   ADD CONSTRAINT `chitietphieumuon_ibfk_1` FOREIGN KEY (`MaPM`) REFERENCES `phieumuon` (`MaPM`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `chitietphieumuon_ibfk_2` FOREIGN KEY (`MaSach`) REFERENCES `sach` (`MaSach`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `chitietphieunhap`
+--
+ALTER TABLE `chitietphieunhap`
+  ADD CONSTRAINT `chitietphieunhap_ibfk_1` FOREIGN KEY (`MaSach`) REFERENCES `sach` (`MaSach`),
+  ADD CONSTRAINT `chitietphieunhap_ibfk_2` FOREIGN KEY (`MaPN`) REFERENCES `phieunhap` (`MaPhieuNhap`);
+
+--
+-- Constraints for table `phat`
+--
+ALTER TABLE `phat`
+  ADD CONSTRAINT `phat_ibfk_1` FOREIGN KEY (`mapm`) REFERENCES `phieumuon` (`MaPM`);
+
+--
+-- Constraints for table `phieumuon`
+--
+ALTER TABLE `phieumuon`
+  ADD CONSTRAINT `phieumuon_ibfk_1` FOREIGN KEY (`MaNV`) REFERENCES `nhanvien` (`MaNV`),
+  ADD CONSTRAINT `phieumuon_ibfk_2` FOREIGN KEY (`MaDocGia`) REFERENCES `docgia` (`madocgia`);
+
+--
+-- Constraints for table `phieunhap`
+--
+ALTER TABLE `phieunhap`
+  ADD CONSTRAINT `phieunhap_ibfk_1` FOREIGN KEY (`MaNCC`) REFERENCES `nhacungcap` (`MaNCC`),
+  ADD CONSTRAINT `phieunhap_ibfk_2` FOREIGN KEY (`MaNV`) REFERENCES `nhanvien` (`MaNV`);
+
+--
+-- Constraints for table `sach`
+--
+ALTER TABLE `sach`
+  ADD CONSTRAINT `sach_ibfk_1` FOREIGN KEY (`MaLoai`) REFERENCES `loai` (`MaLoai`),
+  ADD CONSTRAINT `sach_ibfk_2` FOREIGN KEY (`MaNXB`) REFERENCES `nhaxuatban` (`MaNXB`),
+  ADD CONSTRAINT `sach_ibfk_3` FOREIGN KEY (`MaTacGia`) REFERENCES `tacgia` (`MaTacGia`),
+  ADD CONSTRAINT `sach_ibfk_4` FOREIGN KEY (`Make`) REFERENCES `kesach` (`MaKe`);
 
 --
 -- Constraints for table `thethuvien`
