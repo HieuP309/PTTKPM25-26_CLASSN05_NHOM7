@@ -38,7 +38,7 @@ Phần mềm giúp tiết kiệm thời gian, giảm sai sót trong quản lý, 
 
 ## 👨‍💻 Thành viên nhóm
 - Đào Bá Phương Ninh
-- Nguyễn Trí chung
+- Nguyễn Trí Chung
 - Phạm Văn Hoàn
 - Nguyễn Văn Hiếu
 - Nguyễn Ngọc An
