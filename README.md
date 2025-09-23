@@ -80,7 +80,7 @@ Quan-Ly-Thu-Vien-Library-Management/
 ## Cài đặt
 1. Clone hoặc tải về dự án:
    ```bash
-  https://github.com/HieuP309/PTTKPM25-26_CLASSN05_NHOM7
+     git clone https://github.com/HieuP309/PTTKPM25-26_CLASSN05_NHOM7
    ```
 2. Mở dự án bằng IntelliJ IDEA.
 3. Thiết lập SDK cho dự án (JDK 8+).
