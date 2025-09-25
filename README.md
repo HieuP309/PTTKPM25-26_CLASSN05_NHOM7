@@ -1,4 +1,4 @@
-# 📚 Quản Lý Thư Viện – Library Management (Nhóm 7)
+#  Quản Lý Thư Viện – Library Management (Nhóm 7)
 
 Dự án **Quản Lý Thư Viện** là một ứng dụng Java desktop giúp quản lý hoạt động thư viện (sách, độc giả, mượn – trả, tài khoản) theo kiến trúc 3 lớp (DAL – BUS – GUI).  
 Ứng dụng được phát triển bằng **Java (Swing)** và sử dụng **MySQL** làm cơ sở dữ liệu.  
@@ -6,7 +6,7 @@ Dự án **Quản Lý Thư Viện** là một ứng dụng Java desktop giúp qu
 
 ---
 
-## 📑 Mục lục
+##  Mục lục
 - [Giới thiệu](#giới-thiệu)
 - [Chức năng chính](#chức-năng-chính)
 - [Kiến trúc hệ thống](#kiến-trúc-hệ-thống)
@@ -33,19 +33,19 @@ Dự án **Quản Lý Thư Viện** là một ứng dụng Java desktop giúp qu
 ---
 
 ## Chức năng chính
-### 📝 Quản lý Sách
+###  Quản lý Sách
 - Thêm, sửa, xóa, tìm kiếm sách.
 - Quản lý số lượng, tình trạng sách.
 
-### 👤 Quản lý Độc giả
+###  Quản lý Độc giả
 - Thêm, sửa, xóa, tìm kiếm độc giả.
 - Theo dõi tình trạng thẻ, hạn sử dụng.
 
-### 🔄 Quản lý Mượn – Trả
+###  Quản lý Mượn – Trả
 - Tạo phiếu mượn, phiếu trả.
 - Theo dõi hạn trả, tình trạng quá hạn.
 
-### 🔑 Quản lý Tài khoản
+###  Quản lý Tài khoản
 - Đăng nhập / đăng xuất.
 - Phân quyền (thủ thư, quản trị).
 
@@ -104,9 +104,9 @@ Quan-Ly-Thu-Vien-Library-Management/
 
 ## Thư viện sử dụng
 - **MySQL Connector/J** – Kết nối MySQL.
-- **Apache POI / POI-OOXML** – Xuất Excel (nếu có).
+- **Apache POI / POI-OOXML** – Xuất Excel.
 - **JCalendar** – Chọn ngày.
-- **JFreeChart** – Biểu đồ thống kê (nếu có).
+- **JFreeChart** – Biểu đồ thống kê.
 
 ---
 
